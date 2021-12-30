@@ -1,10 +1,11 @@
 import GroupField from "./GroupField";
+import TitleComponent from "./Title";
 
 const ContactData = () => {
    return ( 
       <section>
-         <GroupField name="name" placeholder="Your name..."></GroupField>
-         
+         <TitleComponent title="Contact details" />
+         <GroupField></GroupField>
       </section>
    );
 }

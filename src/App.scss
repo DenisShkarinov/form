@@ -10,15 +10,36 @@ $lightGray: #7F7F7F;
 $middleGray: #58555A;
 $black: #000000;
 
-.lightTheme {
-
-}
-.blackTheme {
-
-}
-
 body {
   background-color: $white;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.2;
+
+  input {
+    color: $middleGray;
+    font-weight: 600;
+    border-radius: .4em;
+    padding: .5em;
+    border: 2px solid transparent;
+    outline: 0;
+
+    &:active, &:focus {
+      border-color: $black;
+    }
+  }
+}
+
+.groupField {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 1.2em;
+
+  .inputField {
+    flex: 1;
+  }
 }
 
 .App {
@@ -34,5 +55,21 @@ body {
     max-width: 720px;
     width: 100%;
     color: $white;
+  }
+}
+
+.Title {
+  letter-spacing: 0.1em;
+  text-transform: capitalize;
+  text-align: center;
+
+  &:after {
+    content: "";
+    display: block;
+    border-radius: .4em;
+    margin: .5em auto ;
+    width: 50%;
+    height: 1.5px;
+    background-color: $yellow;
   }
 }
